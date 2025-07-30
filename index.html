@@ -696,29 +696,33 @@
             <p class="paragraph-m">Leave your contacts and we will call you back</p>
             <form>
               <div class="info-container">
-                <label class="information" for="user-name">Name
+                <label class="information" for="user-name">Name</label>
                   <div class="name-cont">
                     <input class="name-user" type="text" name="user-name" id="user-name"/>
-                    <svg class="man"><use href="./images/icons.svg#icon-name" width="18" height="24" viewBox="0 0 32 32"></use></svg>
+                    <svg class="man" width="18" height="24" viewBox="0 0 32 32"><use href="./images/icons.svg#icon-name"></use></svg>
                   </div>
-                </label>
+                
               </div>
               <div class="info-container">
-                <label class="information">Phone
-                  <input class="name-user" type="tel" name="phone"/>
-                   <svg class="man"><use href="./images/icons.svg#icon-telephone" width="18" height="24" viewBox="0 0 32 32"></use></svg>
-                </label>
+                <label class="information">Phone</label>
+                  <div class="name-cont">
+                    <input class="name-user" type="tel" name="phone"/>
+                     <svg class="man" width="18" height="24" viewBox="0 0 32 32"><use href="./images/icons.svg#icon-telephone"></use></svg>
+                  </div>
+                
               </div>
               <div class="info-container">
                 <label class="information">Email
-                  <input class="name-user" type="email" name="email"/>
-                  <svg class="man"><use href="./images/icons.svg#icon-email" width="18" height="24" viewBox="0 0 32 32"></use></svg>
-                </label>
+                  <div class="name-cont">
+                    <input class="name-user" type="email" name="email"/>
+                    <svg class="man" width="18" height="24" viewBox="0 0 32 32"><use href="./images/icons.svg#icon-email"></use></svg>
+                  </div>
+                
               </div>
               <div class="info-container">
-                <label class="information">Comments
-                  <textarea class="name-user" name="comments" placeholder="Text input"></textarea>
-                </label>
+                <label class="information">Comments</label>
+                  <div class="name-cont"><textarea class="name-user" name="comments" placeholder="Text input"></textarea></div>
+                
               </div>
               <div class="info-container">
                 <label>
@@ -728,10 +732,11 @@
                       rel="noopener noreferrer nofollow"> Privacy Polisy</a>
                   </label>
               </div>
-               </form>
-            <div class="button-send-place">
+              <div class="button-send-place">
               <button class="button-send" type="button">Send</button>
             </div>
+               </form>
+            
           </div>
         </div>
   </body>
