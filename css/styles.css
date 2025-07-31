@@ -631,6 +631,7 @@ input::placeholder {
 }
 .check-link {
     text-decoration: underline;
+    color: var(--iris);
 }
 input[type="checkbox"] {
     background-color:#404bbf;
