@@ -493,7 +493,7 @@ input::placeholder {
      margin-left: 16px;
 
 }
-.modal-overlay {
+modal-overlay {
     background-color: rgba(46, 47, 66, 0.4);
     position: fixed;
     top:0;
@@ -517,7 +517,7 @@ input::placeholder {
     border-radius: 4px;
     padding: 72px 24px 24px 24px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
-    max-width: 408px;
+    width: 408px;
     min-height: 584px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -550,18 +550,10 @@ input::placeholder {
       cursor: pointer;
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);   
 }
-.button-m-window:hover {
-     background-color: #404bbf;
-     border: none; 
-}
+.button-m-window:hover,
 .button-m-window:focus {
-     background-color: #404bbf;
-     border: none; 
-}
-.button-m-window:hover {
-     fill: #ffffff;
-}
-.button-m-window:focus {
+    background-color: #404bbf;
+    border: none;
     fill: #ffffff;
 }
 .button-s {
@@ -569,6 +561,9 @@ input::placeholder {
 }
 .info-container {
     margin-bottom: 8px;
+}
+.info-container-m {
+     margin-bottom: 16px;
 }
 .info-check {
     margin-bottom: 24px;
@@ -593,7 +588,7 @@ input::placeholder {
      font-size: 12px;
      line-height: 1.17;
      letter-spacing: 0.04em;
-     color: var(----light-slate);
+     color: var(--light-slate);
      display: block;
      margin-bottom: 4px;
 }
@@ -614,6 +609,15 @@ input::placeholder {
 .name-user:focus {
      border-color: #4D5AE5;
 }
+.name-user-area {
+    padding: 8px 16px;
+     height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+     letter-spacing: 0.04em;
+      color: rgba(46, 47, 66, 0.4);
+      resize: none;
+}
 .man {
      position: absolute;
       left: 16px;
@@ -622,18 +626,36 @@ input::placeholder {
          transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+.man:focus {
+    fill: #4D5AE5;
+}
 .check-link {
     text-decoration: underline;
 }
+input[type="checkbox"] {
+    background-color:#404bbf;
+}
+input[class="check-icon"]:checked {
+      border: none;
+       fill:var(--cloud);
+}
 .button-send {
+    display: block;
    display: flex;
 align-items: center;
 justify-content: center;
 gap: 10px;
 border-radius: 4px;
 padding: 16px 32px;
-width: 169px;
+min-width: 169px;
 height: 56px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-background: var(--iris);
+background-color: var(--iris);
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #ffffff;
+cursor: pointer;
+border: none;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
