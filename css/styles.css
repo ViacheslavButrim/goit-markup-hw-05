@@ -493,7 +493,7 @@ input::placeholder {
      margin-left: 16px;
 
 }
-.modal-overlay {
+modal-overlay {
     background-color: rgba(46, 47, 66, 0.4);
     position: fixed;
     top:0;
@@ -570,6 +570,25 @@ input::placeholder {
 .info-container {
     margin-bottom: 8px;
 }
+.info-check {
+    margin-bottom: 24px;
+}
+.info-labl {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;  
+}
+.check-icon {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     display: inline-flex;
+      align-items: center; 
+      justify-content: center;
+       fill: transparent;
+}
 .information {
      font-size: 12px;
      line-height: 1.17;
@@ -603,6 +622,9 @@ input::placeholder {
          transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+.check-link {
+    text-decoration: underline;
+}
 .button-send {
    display: flex;
 align-items: center;
@@ -614,7 +636,4 @@ width: 169px;
 height: 56px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background: var(--iris);
-}
-.button-send-place {
-    margin: 0 auto;
 }
