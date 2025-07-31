@@ -493,7 +493,7 @@ input::placeholder {
      margin-left: 16px;
 
 }
-modal-overlay {
+.modal-overlay {
     background-color: rgba(46, 47, 66, 0.4);
     position: fixed;
     top:0;
