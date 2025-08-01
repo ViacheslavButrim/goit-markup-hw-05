@@ -612,7 +612,7 @@ input::placeholder {
 .name-user:focus {
     border-color: #4D5AE5;
 }
-.man:focus {
+input[class="name-user"]:focus + .man {
     fill: #4D5AE5;
 }
 .name-user-area {
