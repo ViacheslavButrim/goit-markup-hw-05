@@ -571,11 +571,6 @@ input::placeholder {
 .info-check {
     margin-bottom: 24px;
 }
-.visually-hidden:checked + .check-icon {
-    background-color: var(--ocean);
-    border: none;
-    fill: var(--cloud);
-}
 .info-labl {
     font-size: 12px;
     line-height: 1.17;
@@ -637,7 +632,7 @@ input::placeholder {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-input [type="checkbox"]:checked +.info-labl >.check-icon {
+input [type="checkbox"]:checked +.info-labl> .check-icon {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
